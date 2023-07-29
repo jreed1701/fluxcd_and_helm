@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: primary-service
+spec:
+  selector:
+    app: primary
+  ports:
+  - name: main-app-service
+    protocol: TCP
+    port: 5000
+    targetPort: 5000

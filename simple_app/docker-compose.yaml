@@ -1,0 +1,9 @@
+services:
+  simple_app:
+    #build: ./
+    image: simple_app:v1
+    #image: simple_app:v2
+    #image: simple_app:v3
+    ports:
+      - "5000:5000"
+

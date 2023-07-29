@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: flux-helm
+  namespace: flux-system
+spec:
+  interval: 20s
+  url: https://192.168.50.100:8080/

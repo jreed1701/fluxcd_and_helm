@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: primary-application
+  labels:
+    app: primary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: primary
+  template:
+    metadata:
+      labels:
+        app: primary
+    spec:
+
+      containers:
+      # Main Application Container
+      - name: main
+        image: localhost:9001/simple_app:v3
+        ports:
+        - containerPort: 5000
+          name: main-app-svc

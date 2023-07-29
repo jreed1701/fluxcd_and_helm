@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  helm-app:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-07-26T13:03:08.012919762-06:00"
+    description: Simple web app that prints hello world!
+    digest: eb882a12247e935ce6344c1fd329fbba94badaeeb4dc007051c499176403df31
+    name: helm-app
+    type: application
+    urls:
+    - helm-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-07-26T13:03:08.012068937-06:00"
