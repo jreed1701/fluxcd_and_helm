@@ -68,6 +68,10 @@ NOTE. Uninstall before proceeding with "helm uninstall helm-app"
 7. Now, in the web browser, observe that fluxcd automatically updated the helm chart and the "Version #" in the text has changed
    from 1 to 2. 
 
+# Future Work
+
+1. Would like to use gitea as a way to host an air-gapped git repo and have FluxCD watch it instead of having to directly modify HelmRepository CRD.
+
 # References
 
 1. https://helm.sh/docs/howto/chart_repository_sync_example/
